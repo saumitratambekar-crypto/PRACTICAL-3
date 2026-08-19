@@ -46,9 +46,9 @@ INSERT INTO department (dept_id, dept_name) VALUES
 SELECT * FROM Department;
 
 INSERT INTO student (roll_no, name, email, aadhar_no, dept_id) VALUES
-(101, 'Chaitanya Deo', 'chaitanya@example.com', '123456789012', 1),
-(102, 'Varun Gharote', 'varuniversel@example.com', '234567890123', 2),
-(103, 'Siddhi', 'siddi@example.com', '345678901234', 1);
+(101, 'Saumitra Tambekar', 'saumitra@example.com', '123456789012', 1),
+(102, 'Arnav', 'arnav@example.com', '234567890123', 2),
+(103, 'Riyanshu', 'riyanshu@example.com', '345678901234', 1);
 SELECT * FROM student;
 
 INSERT INTO course (course_id, course_name, dept_id) VALUES
