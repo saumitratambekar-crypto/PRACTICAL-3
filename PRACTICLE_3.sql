@@ -36,7 +36,22 @@ CREATE TABLE enrollment (
     FOREIGN KEY (roll_no) REFERENCES student(roll_no),
     FOREIGN KEY (course_id) REFERENCES course(course_id)
 );
+CREATE TABLE faculty (
+    faculty_id INT PRIMARY KEY,
+    faculty_name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) UNIQUE,
+    phone_no VARCHAR(15) UNIQUE,
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES department(dept_id)
+);
 
+INSERT INTO faculty VALUES
+(201, 'Dr. Sharma', 'sharma@gmail.com', '9876543210', 1),
+(202, 'Prof. Mehta', 'mehta@gmail.com', '9876543211', 2),
+(203, 'Dr. Rao', 'rao@gmail.com', '9876543212', 3);
+
+SELECT * FROM faculty;
+    
 USE college_demo;
 
 INSERT INTO department (dept_id, dept_name) VALUES
